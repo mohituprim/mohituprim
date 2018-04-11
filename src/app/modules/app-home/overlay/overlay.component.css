@@ -1,0 +1,70 @@
+.center-position{
+  display: flex;
+  justify-content: center;
+}
+.header-image {
+  background-image: url('http://localhost:4200/assets/ProfilePic.JPG');
+  background-size: cover;
+}
+
+.mat-card {
+    background:transparent;
+    border: transparent;
+}
+.overlay-style{
+    width: 300px;
+}
+.mat-card-avatar {
+    height: 100px;
+    width: 120px;
+}
+.space-manage{
+    display: flex;
+    justify-content: space-between;
+}
+i.icon-fb {
+    color: #4267b2;
+}
+i.icon-tw {
+    color: #1da1f2;
+}
+i.icon-q {
+    color: #6c1b17;
+}
+i.icon-ln {
+    color: #0073b1;
+}
+i.icon-g {
+    color: #db4437;
+}
+i.icon-so {
+    color:  #F48024;
+}
+i.icon-black {
+    color:  black;
+}
+fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-bottom: 1px solid white;
+  top: 0;
+  width: 50px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

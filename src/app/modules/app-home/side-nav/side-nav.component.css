@@ -1,0 +1,24 @@
+
+.sidenav-profile-image {
+  background-image: url('http://localhost:4200/assets/ProfilePic.JPG');
+  background-size: cover;
+}
+
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+.intro-row{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.intro-icon{
+  font-size: 15px;
+  vertical-align: -webkit-baseline-middle;
+}
+.intro-a{
+  color:#365899; 
+  text-decoration:none; 
+  cursor:pointer; 
+  outline: none;
+}

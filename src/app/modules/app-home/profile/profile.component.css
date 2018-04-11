@@ -1,0 +1,35 @@
+.main {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.space-column{
+    flex: 1 1 1e-09px;
+}
+
+.content-row{
+    display: flex;  
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 100% ;
+    padding-block-end: 10px;
+}
+.content-row > .image-column {
+    max-width: 200px;
+    max-height: 200px;
+    flex: 1 20%;
+}
+.content-row > .desc-column {
+    flex: 1 70%;
+}
+.style-image {
+    /* width: calc(100% + 38px);  */
+    width:80%;
+    height:100%;
+    border-radius: 10%
+}
+.mat-list-item{
+    height: 100%;
+}

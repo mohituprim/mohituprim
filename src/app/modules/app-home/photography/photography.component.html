@@ -1,0 +1,15 @@
+<h3>Responsive grid using flexbox and the <code>justify-content</code> property</h3>
+
+
+<div>
+  <a *ngFor="let item of imageData">
+    <figure (click)="openImageDialog()">
+      <img src="{{item.imageUrl}}" alt="">
+      <figcaption>
+        {{item.imageDescription}}
+      </figcaption>
+    </figure>
+  </a>
+</div>
+
+<p class="p">Demo by George Martsoukos. <a href="http://www.sitepoint.com/using-modern-css-to-build-a-responsive-image-grid/" target="_blank">See article</a>.</p>

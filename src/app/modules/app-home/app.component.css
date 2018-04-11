@@ -1,0 +1,38 @@
+
+.mat-sidenav-container{
+    background:no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 100vh;
+}
+
+.mat-drawer-container {
+  background-color: rgba(250, 250, 250, 0);
+}
+.container{
+  display: flex;
+  flex-direction: row;
+
+}
+.mainContentContainer{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertposition{
+  position: absolute;
+  right: 0;
+}
+
+.addButtonPosition{
+  top: auto !important;
+  right: 20px !important;
+  bottom: 10px !important;
+  left: auto !important;
+  position: fixed !important;
+}
+

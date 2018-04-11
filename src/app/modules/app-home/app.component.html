@@ -1,0 +1,25 @@
+<mat-sidenav-container #container fxLayout="column">
+  <div fxLayout="column" >
+    <div fxFlex="grow">        
+      <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button class="vertposition" (click)="sidenav.toggle()">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+     <float-button icon="add" direction="top" class="addButtonPosition">
+        <float-item-button icon="person_add" content="float item 1"></float-item-button>
+        <float-item-button icon="gps_fixed" content="float item 2"></float-item-button>
+        <float-item-button icon="mode_edit" content="float item 3"></float-item-button>
+    </float-button>
+    </div>
+    <div class="container">
+      <div class="mainContentContainer">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <mat-sidenav #sidenav [mode]="over">
+    <app-side-nav (onClose)="onClose($event)"></app-side-nav>
+  </mat-sidenav>
+</mat-sidenav-container>

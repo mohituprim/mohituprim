@@ -1,0 +1,21 @@
+<mat-card class="sidenav-style">
+  <mat-card-header>
+    <div mat-card-avatar class="sidenav-profile-image"></div>
+    <mat-card-title>Mohit Uprim</mat-card-title>
+    <mat-card-subtitle>Software Developer</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="intro-row" *ngFor="let item of intro">
+      <span>
+        <mat-icon class="intro-icon">{{item.icon}}</mat-icon> {{item.name}} <a class="intro-a" href="https://www.facebook.com/mohituprim" target="_blank" rel="noopener noreferrer">{{item.link}}</a>
+      </span>
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-nav-list style="padding-top:0px">
+  <mat-list-item class="pointer" *ngFor="let item of sidenavlink" (click)="closeSideNav()"  routerLink="{{item.link}}">
+    <mat-icon mat-list-icon>{{item.icon}}</mat-icon>
+    <h4 mat-line>{{item.name}}</h4>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-nav-list>

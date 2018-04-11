@@ -1,0 +1,20 @@
+<mat-list >
+    <mat-list-item *ngFor="let item of profileData" class="main">
+        <!-- <div class="space-column">
+        </div> -->
+        <div class="content-row">
+            <div class="image-column">
+                    <img class="style-image" src="{{item.imageUrl}}">
+            </div>
+            <div class="desc-column">
+                <mat-card>
+                    <mat-card-title>{{item.title}}</mat-card-title>
+                    <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
+                    <mat-card-content>{{item.content}}</mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <!-- <div class="space-column">
+        </div> -->
+    </mat-list-item>
+</mat-list>
